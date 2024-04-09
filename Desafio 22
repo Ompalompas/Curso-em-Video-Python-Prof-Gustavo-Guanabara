@@ -1,0 +1,24 @@
+#Desafio 22
+nome=str(input('\033[7;30;47mDigite\033[m \033[7;36;mseu\033[m '
+'\033[7;36;40mnome\033[m \033[7;36;41mcompleto:\033[m ').strip())
+
+print('\033[7;30;42mAnalisando\033[m \033[7;30;43mseu\033[m \033[7;;mnome...\033[m')
+
+print('\033[7;30;45mSeu\033[m \033[7;30;46mnome\033[m \033[7;30;47mem\033[m '
+'\033[7;37;mmaiúsculas\033[m \033[7;37;40mé\033[m \033[7;;41m{}\033[m'.format(nome.upper()))
+
+print('\033[7;30;42mSeu\033[m \033[7;30;43mnome\033[m \033[7;30;44mem\033[m '
+'\033[7;30;45mminúsculas\033[m \033[7;30;46mé\033[m \033[7;30;47m{}\033[m'.format(nome.lower()))
+
+print('\033[1;30;mSeu\033[m \033[1;;40mnome\033[m \033[1;30;41mtem\033[m '
+'\033[1;30;42mao\033[m \033[1;30;43mtodo\033[m \033[1;30;44m{}\033[m '
+'\033[1;30;45mletras\033[m'.format(len(nome)-nome.count(' ')))
+
+##codigo opcional---> print('Seu primeiro nome é {} letras'.format(nome.find(' ')))
+separa=nome.split()
+
+print('\033[1;30;46mSeu\033[m \033[1;30;47mprimeiro\033[m \033[1;30;48mnome\033[m '
+'\033[mé\033[m \033[1;31;m{}\033[m \033[1;31;40me\033[m \033[1;30;41mele\033[m '
+'\033[1;31;42mtem\033[m \033[1;31;43m{}\033[m \033[1;31;44mletras\033[m'.format(separa[0],len(separa[0])))
+
+
